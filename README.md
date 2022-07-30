@@ -19,6 +19,7 @@ Bootstrap Dökümanları: https://getbootstrap.com/docs/5.2/getting-started/intr
 Kaynak Önerisi: https://www.w3schools.com/bootstrap/bootstrap_get_started.asp
 
 Atom Editörü
+
 atom.io editörünü indirin. Preferences kısmından install seçeneğine gidin sonrasında search kısmına "atom live server aramasını" yapın ve install butonuna tıklayın.
 Atom live server paketi editör üzerinde yaptığınız değişiklikleri anında yan sekmede gösteren bir pakettir. 
 Bu paket vasıtasyıla editör içerisindeki yaptığınız değişiklikleri kolayca görebilirsiniz.
