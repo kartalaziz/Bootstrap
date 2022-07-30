@@ -13,7 +13,9 @@ Bootstrap’teki grid sistemi ile birlikte ekran boyutuna duyarlı web sayfalar�
 Bootstrap tüm tarayıcıların en yeni sürümlerini destekler.
 
 Bootstrap ile oluşturulmuş siteler(örnek): https://getbootstrap.com/docs/4.0/examples/
+
 Bootstrap Dökümanları: https://getbootstrap.com/docs/5.2/getting-started/introduction/
+
 Kaynak Önerisi: https://www.w3schools.com/bootstrap/bootstrap_get_started.asp
 
 Atom Editörü
