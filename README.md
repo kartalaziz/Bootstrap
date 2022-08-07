@@ -20,14 +20,6 @@ Bootstrap Dökümanları: https://getbootstrap.com/docs/5.2/getting-started/intr
 
 Kaynak Önerisi: https://www.w3schools.com/bootstrap/bootstrap_get_started.asp
 
-##### Atom Editörü
-
-atom.io editörünü indirin. Preferences kısmından install seçeneğine gidin sonrasında search kısmına "atom live server aramasını" yapın ve install butonuna tıklayın.
-Atom live server paketi editör üzerinde yaptığınız değişiklikleri anında yan sekmede gösteren bir pakettir. 
-Bu paket vasıtasyıla editör içerisindeki yaptığınız değişiklikleri kolayca görebilirsiniz.
-
-Bootstrap'i projeye dahil etmek için bootstrap'in internet sitesinde bulunan starter templete kısmını kopyalayıp projenize yapıştırabilirsiniz.
-Daha kapsamlı bir yolu da var fakat bence gereksiz.
 
 ```
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -35,100 +27,118 @@ Daha kapsamlı bir yolu da var fakat bence gereksiz.
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 ```
 
-#### Bootstrap 5 Grid System
-Bootstrap's grid system is built with flexbox and allows up to 12 columns across the page.
+## Bootstrap'te Containers
+Containers içlerindeki içeriği doldurmak için kullanılırlar. İki tip Container vardır:
 
-### Grid Classes
-The Bootstrap 5 grid system has six classes:
+1- `.container` sınıfı, duyarlı sabit genişlikte bir kapsayıcı sağlar.
 
-.col- (extra small devices - screen width less than 576px)
-.col-sm- (small devices - screen width equal to or greater than 576px)
-.col-md- (medium devices - screen width equal to or greater than 768px)
-.col-lg- (large devices - screen width equal to or greater than 992px)
-.col-xl- (xlarge devices - screen width equal to or greater than 1200px)
-.col-xxl- (xxlarge devices - screen width equal to or greater than 1400px)
+2- `.container-fluid` sınıfı, görünümün tüm genişliğini kapsayan tam genişlikte bir kapsayıcı sağlar.
 
-https://www.w3schools.com/bootstrap5/bootstrap_typography.php
+![Görsel Hali](https://i.hizliresim.com/r5iduxx.png)
 
-https://www.w3schools.com/bootstrap5/tryit.asp?filename=trybs_table_contextual&stacked=h
+## Sabit Containers(Kapsayıcılar)
+`.container` sınıfını kullanarak sabit genişlikte, duyarlı kapsayıdılar oluşturulabilir.
+`max-width` ile farklı ekran boyutlarında değişen kapsayıcılar oluşturulabilir.
 
-Image Shapes
+## Fluid Container
+Her zaman ekranın tüm genişliğini kaplayacak tam genişlikte bir kap oluşturmak için `.container-fluid` sınıfı kullanılır.
 
-Rounded Corners
-The .rounded class adds rounded corners to an image
-<img src="cinqueterre.jpg" class="rounded" alt="Cinque Terre">
+## Kapsayıcı Dolgusu
 
-Circle
-The .rounded-circle class shapes the image to a circle
-<img src="cinqueterre.jpg" class="rounded-circle" alt="Cinque Terre">
+Varsayılan olarak kapsayıcılar, üst veya alt dolgu olmadan sol ve sağ dolguya sahiptir. Bu nedenle, daha iyi görünmelerini sağlamak için genellikle fazladan dolgu ve kenar boşlukları gibi  yardımcı programları kullanırız. 
 
-Thumbnail
-The .img-thumbnail class shapes the image to a thumbnail (bordered)
-<img src="cinqueterre.jpg" class="img-thumbnail" alt="Cinque Terre">
+Örneğin, `.pt-5`, "büyük bir üst dolgu ekle" anlamına gelir.
 
+`<div class="container pt-5"></div>`
 
-Bootstrap 5 Alerts
+## Kapsayıcıların Sınırları ve Renkleri
 
-Alerts are created with the .alert class, followed by one of the contextual classes .alert-success, .alert-info, .alert-warning, .alert-danger, .alert-primary, .alert-secondary, .alert-light or .alert-dark:
+```
+<div class="container p-5 my-5 border"></div>
 
-Alert Links
-Add the .alert-link class to any links inside the alert box to create "matching colored links"
+<div class="container p-5 my-5 bg-dark text-white"></div>
 
-Closing Alerts
-To close the alert message, add a .alert-dismissible class to the alert container. Then add class="btn-close" and data-bs-dismiss="alert" to a link or a button element (when you click on this the alert box will disappear).
+<div class="container p-5 my-5 bg-primary text-white"></div>
+```
 
-Animated Alerts
-The .fade and .show classes adds a fading effect when closing the alert message
-örnek: https://www.w3schools.com/bootstrap5/tryit.asp?filename=trybs_alerts_fade&stacked=h
+## Bootstrap 5 Izgara(Grid) Sistemi
 
-Button Styles
-https://www.w3schools.com/bootstrap5/bootstrap_buttons.php
+Bootstrap'in ızgara sistemi flexbox ile oluşturulmuştur. 
 
-Badges(önemli)
-https://www.w3schools.com/bootstrap5/bootstrap_badges.php
+Sayfa boyunca 12 sütuna kadar izin verir.
 
-Progress bar
-https://www.w3schools.com/bootstrap5/bootstrap_progressbars.php
+12 sütunun tümünü tek tek kullanmak istemiyorsanız, daha geniş sütunlar oluşturmak için sütunları birlikte gruplayabilirsiniz.
 
-Spinners
-https://www.w3schools.com/bootstrap5/bootstrap_spinners.php
+![Grid System](https://i.hizliresim.com/isnd6zs.png)
 
-Pagination
-https://www.w3schools.com/bootstrap5/bootstrap_pagination.php
+Grid sistemi duyarlıdır ve sütunlar ekran boyutuna bağlı olarak otomatik olarak yeniden düzenlenir.
 
-Cards
-https://www.w3schools.com/bootstrap5/bootstrap_cards.php
+## Grid Sınıfları
+Bootstrap 5'te altı adet sınıf bulunmaktadır.
 
-Dropdowns
-https://www.w3schools.com/bootstrap5/bootstrap_dropdowns.php
+| Sınıf         | Açıklaması    | 
+| ------------- |:-------------:|
+| `.col-`       |extra küçük cihazlar - ekran genişliği 576px'den az                            |
+| `.col-sm-`    |küçük cihazlar - ekran genişliği 576px ile 768px arasındaki cihazlar           |
+| `.col-md-`    |orta cihazlar - ekran genişliği 768px ile 992px arasındaki cihazlar            |
+| `.col-lg-`    |büyük cihazlar - ekran genişliği 992px ile 1200px arasındaki cihazlar          |
+| `.col-xl-`    |daha büyük cihazlar - ekran genişliği 1200px ile 1400px arasındaki cihazlar    |
+| `.col-xxl-`   |extra büyük cihazlar - ekran genişliği 1400px'den fazla olan cihazlar          |
 
-Collapse
-https://www.w3schools.com/bootstrap5/bootstrap_collapse.php
+#### 3 Eşit Kolon Oluşturma
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  
+<div class="container-fluid mt-3">
+  <h1>3 Eşit Kolon Oluşturma</h1>
 
-Navs
-https://www.w3schools.com/bootstrap5/bootstrap_navs.php
+  <div class="row">
+    <div class="col p-3 bg-primary text-white">.col</div>
+    <div class="col p-3 bg-dark text-white">.col</div>
+    <div class="col p-3 bg-primary text-white">.col</div>
+  </div>
+</div>
 
-Navbar
-https://www.w3schools.com/bootstrap5/bootstrap_navbar.php
+</body>
+</html>
+```
+![Çıktı](https://i.hizliresim.com/d529tht.png)
 
-Carousel
-https://www.w3schools.com/bootstrap5/bootstrap_carousel.php
+#### Eşit Olmayan İki Kolon Oluşturma
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  
+<div class="container-fluid mt-3">
+  <h1>Eşit Olmayan İki Kolon Oluşturma</h1>
+  <p>Resize the browser window to see the effect.</p>
 
-Modal
-https://www.w3schools.com/bootstrap5/bootstrap_modal.php
+  <div class="row">
+    <div class="col-sm-4 p-3 bg-primary text-white">.col</div>
+    <div class="col-sm-8 p-3 bg-dark text-white">.col</div>
+  </div>
+</div>
 
-Popover
-https://www.w3schools.com/bootstrap5/bootstrap_popover.php
+</body>
+</html>
+```
+![Çıktı](https://i.hizliresim.com/loyd8gn.png)
 
-Toasts
-https://www.w3schools.com/bootstrap5/bootstrap_toast.php
-
-Scrollspy
-https://www.w3schools.com/bootstrap5/bootstrap_scrollspy.php
-
-Offcanvas
-https://www.w3schools.com/bootstrap5/bootstrap_offcanvas.php
-
-Forms
-https://www.w3schools.com/bootstrap5/bootstrap_forms.php
-
+Kaldığım yer: https://www.w3schools.com/bootstrap5/bootstrap_typography.php
