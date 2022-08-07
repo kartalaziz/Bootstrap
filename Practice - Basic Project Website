@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Aziz Kartal - HTMLCSSBootstrap Practice">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Practice - Basic Project Website">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <title>Practice - Basic Project Website</title>
+        <style>
+            body {background-image: url('http://sbt.com.tr/wp-content/uploads/Savin-NY-Website-Background-Web-1.jpg');background-repeat: no-repeat;background-attachment: fixed;
+  background-size: cover;}
+            h1   {color: rgb(114, 66, 108); font-size: 300%; font-family: Arial, Helvetica, sans-serif; padding: 30px;}
+            h2   {color: rgb(83, 138, 25); font-size: 300%; font-family: Arial, Helvetica, sans-serif; padding: 30px;}
+            p {font-size: 150%; font-family: Arial, Helvetica, sans-serif; padding: 30px;}
+            a:link {color:rgb(201, 47, 73)}
+            </style>
+    </head>
+   
+    <center><body>
+         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Twitter</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Discord</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Telegram</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Whitepaper</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="text" placeholder="Search">
+                  <button class="btn btn-primary" type="button">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+       
+          <br>
+
+          <div id="accordion">
+
+            <div class="card">
+              <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                  About Us 
+                </a>
+              </div>
+              <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body">
+                  Hi there, We're Bored Patates NFT Club. We have been trying to design a NFT Marketplace for shitcoins. 
+                  Our previous goal is increase the shitcoins' popularity. 
+                </div>
+              </div>
+            </div>
+          
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                  Partnership and Collaboration
+                </a>
+              </div>
+              <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                  For now we don't have any partnership but we make meeting about that.
+                </div>
+              </div>
+            </div>
+          
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                  Launch Time
+                </a>
+              </div>
+              <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                  We'll launch the project about lately 2023.
+                </div>
+              </div>
+            </div>
+          
+          </div>
+
+          <br>
+
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+   
+         <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://miro.medium.com/max/1024/1*A0H4wUDVVB1APxrVGEwWVg.png" alt="Tokenomics General" class="d-block" style="width:50%">
+        </div>
+        <div class="carousel-item">
+            <img src="https://245681299-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Mb6kABTQvTeYDjx9qXI-887967055%2Fuploads%2FdQSq12tv4lsXPLUNbMp1%2Ftokenomics.png?alt=media&token=5a53c7a7-676e-40e5-bd8a-2458d91a1ea2" alt="Tokenomics Detailly - 1" class="d-block" style="width:50%;height: 50%;">
+        </div>
+        <div class="carousel-item">
+            <img src="https://www.primary.io/wp-content/uploads/total-token-allocation_white.jpg" alt="Tokenomics Detailly - 2" class="d-block" style="width:50%;height: 50%;">
+        </div>
+        </div>
+        
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </button>
+  </div>
+
+  <br>
+  <h1>Team</h1>
+  <!--CEO-->
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="img_avatar1.png" alt="CEO's Photo">
+    <div class="card-body">
+      <h4 class="card-title">CEO</h4>
+      <p class="card-text">Our CEO is a newgraduate Engineer.</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+  <br>
+<!--Project Manager-->
+<div class="card" style="width:400px">
+    <img class="card-img-top" src="img_avatar1.png" alt="Project Manager's Photo">
+    <div class="card-body">
+      <h4 class="card-title">Project Manager</h4>
+      <p class="card-text">Our project manager is an undergraduate student.</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+  <br>
+<!--Social Media Manager/Community Manager-->
+<div class="card" style="width:400px">
+    <img class="card-img-top" src="img_avatar1.png" alt="Community Manager's Photo">
+    <div class="card-body">
+      <h4 class="card-title">Social Media&Community Manager</h4>
+      <p class="card-text">Our project manager is an excellent person.</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+  <br>
+  <!--Web Designer-->
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="img_avatar1.png" alt="Web Designer's Photo">
+    <div class="card-body">
+      <h4 class="card-title">Web Designer</h4>
+      <p class="card-text">Our Web Designer is an excellent person.</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+  <br>
+  <!--SEO Manager-->
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="img_avatar1.png" alt="SEO Manager's Photo">
+    <div class="card-body">
+      <h4 class="card-title">SEO Manager</h4>
+      <p class="card-text">Our SEO Manager is an excellent person.</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+  <br>
+  <!--Smart Contract Developer-->
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="img_avatar1.png" alt="Smart Contract Developer's Photo">
+    <div class="card-body">
+      <h4 class="card-title">Smart Contract Developer</h4>
+      <p class="card-text">Our Smart Contract Developer is an excellent person.</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+  <br>
+
+  <div class="mt-5 p-4 bg-dark text-white text-center">
+    <p>Nothing is copyrighted. You can use all the code.</p>
+  </div>
+  </body></center> 
+
+
+  <!--I didn't finish the project-->
+</html>
