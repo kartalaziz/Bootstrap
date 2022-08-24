@@ -141,4 +141,33 @@ Bootstrap 5'te altı adet sınıf bulunmaktadır.
 ```
 ![Çıktı](https://i.hizliresim.com/loyd8gn.png)
 
-Kaldığım yer: https://www.w3schools.com/bootstrap5/bootstrap_typography.php
+# Tipografi Sınıfları
+
+## Bootstrap 5 Varsayılan Özellikler(Default Settings)
+Bootstrap 5 varsayılan bir `font-size` kullanır. Bu 16px'dir. `line-height` ise 1.5'tir.
+Ek olarak, tüm `<p>` elementleri `margin-top:0` ve `margin-bottom: 1rem` varsayılan özelliklerine sahiptir.
+
+### `<code>` Elementi
+HTML sayfasında bir kodu belirtmek için kullanılır. 
+Örnek kullanım: `<p> HTML elementlerinden <code>span</code> dökümanda bir bölüm tanımlarken kullanılır.`
+
+### `<kbd>` Elementi
+Tuş takımı kombinasyonlarını göstermek için `<kbd>` elementi kullanılır.
+Örnek kullanım: `<p> Bir diyaloğu bastırmak için <kbd>ctrl+p</kbd>elementi kullanılır.</p>`
+
+### Daha fazla tipografi sınıfı
+| Sınıf         | Açıklaması    | 
+| ------------- |:-------------:|
+| `.lead`       |Bir paragrafın öne çıkmasını sağlar                          |
+| `.text-start`    |Sola hizalanmış metni gösterir          |
+| `.text-break`    |Uzun metnin düzeni bozmasını önler          |
+| `.text-center`    |Ortaya hizalanmış metni gösterir       |
+| `.text-decoration-none`    |Bağlantıdan alt çizgiyi kaldırır   |
+| `.text-end`   |Sağa hizalanmış metni gösterir          |
+| `.text-nowrap`       |Sarma metni olmadığını gösterir                         |
+| `.text-lowercase`    |Küçük harfli metni gösterir           |
+| `..text-uppercase`    |Büyük harfli metni gösterir            |
+| `.text-capitalize`    |Büyük harfle yazılmış metni gösterir         |
+| `.initialism`    |<abbr> öğesinin içindeki metni biraz daha küçük yazı tipi boyutunda görüntüler  |
+| `.list-unstyled`   |Liste öğelerindeki varsayılan liste stilini ve sol kenar boşluğunu kaldırır (hem <ul> hem de <ol> üzerinde çalışır). Bu sınıf yalnızca acil alt liste öğeleri için geçerlidir (varsayılan liste stilini herhangi bir yuvalanmış listeden kaldırmak için, bu sınıfı herhangi bir yuvalanmış listeye de uygulayın)         |
+| `.list-inline`   |Tüm liste öğelerini tek bir satıra yerleştirir (her <li> öğesinde .list-inline-item ile birlikte kullanılır)       |
