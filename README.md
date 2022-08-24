@@ -171,3 +171,118 @@ Tuş takımı kombinasyonlarını göstermek için `<kbd>` elementi kullanılır
 | `.initialism`    |<abbr> öğesinin içindeki metni biraz daha küçük yazı tipi boyutunda görüntüler  |
 | `.list-unstyled`   |Liste öğelerindeki varsayılan liste stilini ve sol kenar boşluğunu kaldırır (hem <ul> hem de <ol> üzerinde çalışır). Bu sınıf yalnızca acil alt liste öğeleri için geçerlidir (varsayılan liste stilini herhangi bir yuvalanmış listeden kaldırmak için, bu sınıfı herhangi bir yuvalanmış listeye de uygulayın)         |
 | `.list-inline`   |Tüm liste öğelerini tek bir satıra yerleştirir (her <li> öğesinde .list-inline-item ile birlikte kullanılır)       |
+  
+
+ ## Tablo çeşitleri
+ ` <table class="table table-dark">`
+  
+ `<table class="table table-dark table-striped">`
+  
+```
+  .table-primary	Blue: Indicates an important action
+  
+.table-success	Green: Indicates a successful or positive action
+  
+.table-danger	Red: Indicates a dangerous or potentially negative action
+  
+.table-info	Light blue: Indicates a neutral informative change or action
+  
+.table-warning	Orange: Indicates a warning that might need attention
+  
+.table-active	Grey: Applies the hover color to the table row or table cell
+  
+.table-secondary	Grey: Indicates a slightly less important action
+  
+.table-light	Light grey table or table row background
+  
+.table-dark	Dark grey table or table row background
+ 
+ ```
+ ## Alerts
+  Alert oluşturmak için `.alert` ifadesi kullanılır. Alert türü ise devamında belirtilir.
+Kullanılabilecek türler:
+  `.alert-success`
+  `.alert-info`
+  `.alert-warning`
+  `.alert-danger`
+  `.alert-primary`
+  `.alert-secondary`
+  `.alert-light`
+  `.alert-dark`
+  
+  Örnek kullanım:
+  
+  ```
+  <div class="container mt-3">
+  <h2>Alerts</h2>
+  <p>Alerts are created with the .alert class, followed by a contextual color classes:</p>
+  <div class="alert alert-success">
+    <strong>Success!</strong> This alert box could indicate a successful or positive action.
+  ```
+ ### Alert Linkleri
+    
+  Örnek kullanım:
+    
+  ```
+    <div class="alert alert-success">
+  <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
+</div>
+  ```
+ ### Alertleri kapatmak
+    
+  Örnek kullanım:
+ ``` <div class="alert alert-success alert-dismissible">
+  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  <strong>Success!</strong> This alert box could indicate a successful or positive action.
+</div> ```
+    
+ ### Animasyonlu Alertler
+    `.fade` ve `.show` 
+    
+  Örnek kullanım:
+    ```
+    <div class="container mt-3">
+  <h2>Animated Alerts</h2>
+  <p>The .fade and .show classes adds a fading effect when closing the alert message.</p>
+  <div class="alert alert-success alert-dismissible fade show">
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    <strong>Success!</strong> This alert box could indicate a successful or positive action.
+  </div>
+   ```
+ 
+ ### Buton Türleri
+    ```
+<button type="button" class="btn">Basic</button>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-dark">Dark</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-link">Link</button>
+    ```
+  ### Buton Çevresi 
+  hover efekti verilen butonlar kullanılabilir. Örnek kullanımlar:
+      
+      ```
+      <button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-dark">Dark</button>
+<button type="button" class="btn btn-outline-light text-dark">Light</button>
+      ```
+  ### Buton Boyutları
+      
+      ```
+      <button type="button" class="btn btn-primary btn-lg">Large</button>
+<button type="button" class="btn btn-primary">Default</button>
+<button type="button" class="btn btn-primary btn-sm">Small</button>
+      ```
+      
+ 
+   
